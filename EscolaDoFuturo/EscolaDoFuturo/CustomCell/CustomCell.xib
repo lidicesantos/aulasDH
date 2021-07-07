@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" id="KGk-i7-Jjw" customClass="CustomCell" customModule="EscolaDoFuturo" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomCell" id="KGk-i7-Jjw" customClass="CustomCell" customModule="EscolaDoFuturo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -19,12 +19,12 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Phx-xM-IAu">
                         <rect key="frame" x="16" y="10" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="TlE-Yd-5UF"/>
+                            <constraint firstAttribute="height" priority="999" constant="60" id="TlE-Yd-5UF"/>
                             <constraint firstAttribute="width" constant="60" id="iCl-AN-HPb"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qE-xU-eeq">
-                        <rect key="frame" x="90" y="10" width="214" height="20.5"/>
+                        <rect key="frame" x="90" y="10" width="186" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,13 +35,25 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hep-vH-bco">
+                        <rect key="frame" x="284" y="10.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1sa-Ez-typ"/>
+                            <constraint firstAttribute="width" constant="20" id="wnf-SQ-LMc"/>
+                        </constraints>
+                        <connections>
+                            <action selector="tappedEditButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kGa-fV-wEa"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hep-vH-bco" secondAttribute="trailing" constant="16" id="Gss-Kb-yCK"/>
                     <constraint firstAttribute="trailing" secondItem="yMY-0I-Wi0" secondAttribute="trailing" constant="16" id="Les-Hw-X9s"/>
+                    <constraint firstItem="Hep-vH-bco" firstAttribute="leading" secondItem="3qE-xU-eeq" secondAttribute="trailing" constant="8" symbolic="YES" id="OuE-Un-26P"/>
                     <constraint firstItem="yMY-0I-Wi0" firstAttribute="leading" secondItem="Phx-xM-IAu" secondAttribute="trailing" constant="14" id="S97-Mg-44P"/>
-                    <constraint firstAttribute="trailing" secondItem="3qE-xU-eeq" secondAttribute="trailing" constant="16" id="SC9-6U-bWs"/>
                     <constraint firstItem="3qE-xU-eeq" firstAttribute="leading" secondItem="Phx-xM-IAu" secondAttribute="trailing" constant="14" id="ZBh-Zp-h9q"/>
                     <constraint firstItem="yMY-0I-Wi0" firstAttribute="bottom" secondItem="Phx-xM-IAu" secondAttribute="bottom" id="agK-hv-mY3"/>
+                    <constraint firstItem="Hep-vH-bco" firstAttribute="centerY" secondItem="3qE-xU-eeq" secondAttribute="centerY" id="epf-hq-yu7"/>
                     <constraint firstItem="Phx-xM-IAu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h5E-f1-Wkd"/>
                     <constraint firstItem="Phx-xM-IAu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jLF-CB-DKN"/>
                     <constraint firstItem="3qE-xU-eeq" firstAttribute="top" secondItem="Phx-xM-IAu" secondAttribute="top" id="lwV-lU-GgI"/>

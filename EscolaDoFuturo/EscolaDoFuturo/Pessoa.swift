@@ -17,11 +17,13 @@ class Pessoa {
     var sobrenome: String?
     var idade: Int?
     var genero: Genero?
+    var avatar: String?
     
-    init(nome: String?, sobrenome: String?, idade: Int?, genero: Genero?) {
+    init(nome: String?, sobrenome: String?, idade: Int?, genero: Genero?, avatar: String?) {
         self.nome = nome
         self.sobrenome = sobrenome
         self.idade = idade
         self.genero = genero
+        self.avatar = avatar
     }
 }

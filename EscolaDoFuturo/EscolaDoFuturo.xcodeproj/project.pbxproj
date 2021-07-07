@@ -16,6 +16,7 @@
 		F0A46ED62682B35200D839B1 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A46ED52682B35200D839B1 /* Pessoa.swift */; };
 		F0A46EDB2682C23700D839B1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A46ED92682C23700D839B1 /* CustomCell.swift */; };
 		F0A46EDC2682C23700D839B1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A46EDA2682C23700D839B1 /* CustomCell.xib */; };
+		F0AD02882695B7C200738495 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD02872695B7C100738495 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F0A46ED52682B35200D839B1 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 		F0A46ED92682C23700D839B1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F0A46EDA2682C23700D839B1 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F0AD02872695B7C100738495 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				F0A46ECB2682B26000D839B1 /* LaunchScreen.storyboard */,
 				F0A46ECE2682B26000D839B1 /* Info.plist */,
 				F0A46ED52682B35200D839B1 /* Pessoa.swift */,
+				F0AD02872695B7C100738495 /* DetailViewController.swift */,
 			);
 			path = EscolaDoFuturo;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				F0A46EC52682B25E00D839B1 /* ViewController.swift in Sources */,
 				F0A46ED62682B35200D839B1 /* Pessoa.swift in Sources */,
 				F0A46EDB2682C23700D839B1 /* CustomCell.swift in Sources */,
+				F0AD02882695B7C200738495 /* DetailViewController.swift in Sources */,
 				F0A46EC12682B25E00D839B1 /* AppDelegate.swift in Sources */,
 				F0A46EC32682B25E00D839B1 /* SceneDelegate.swift in Sources */,
 			);
